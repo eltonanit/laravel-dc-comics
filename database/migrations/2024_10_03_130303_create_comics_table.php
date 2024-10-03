@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description')->nullable();
-            $table->string('thumb');
-            $table->decimal('price', 5, 2);
+            $table->text('thumb');
+            $table->string('price', 10);
             $table->date('sale_date');
             $table->string('type');
             $table->text('artists')->nullable();
