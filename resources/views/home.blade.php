@@ -15,26 +15,14 @@
     <div class="container">
         <div class="row">
         <div class="col-12">
-            SPAZIO FUMETTI
+           <h1 class="text-center">LARAVEL DC COMICS </h1> 
         </div>
         </div>
          
         <div class="row">
-            @foreach($comics as $comic)
-            <div class="col-12 col-md-3 col-lg-2">
-                <div class="comic-card border-0 m-1">
-                    <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                    <div class="card-body">
-                      <span clas="text-uppercase">  {{ $comic['title'] }} </span> 
-                    </div>
-
-                </div>
-
-            </div>
-            @endforeach
+            <P>Database dc comics </P> 
         </div>
     </div>
 </div>
-    
 
 @endsection
