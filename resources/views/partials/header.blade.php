@@ -4,12 +4,14 @@
             <div class="col-12">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo">
+                        <a href="{{ route('homepage') }}"></a>
                         <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="Dc comics ">
                     </div>
                     <div class="menu">
                         <ul class="list-unstyled d-flex m-0">
                             <li class="nav-item px-3 py-5"><a class="nav-link" href="#" >Charachters </a></li>
-                            <li class="nav-item px-3 py-5 {{ Route::currentRouteName () === 'homepage' ? 'active' : '' }}"><a class="nav-link " href="#" > Comics</a></li>
+                            <li class="nav-item px-3 py-5 {{ Route::currentRouteName () === 'comics' ? 'active' : '' }}">
+                                <a class="nav-link " href="{{ route('comics.index') }}" > Comics</a></li>
                             <li class="nav-item px-3 py-5"><a class="nav-link" href="#" >Movies </a></li>
                             <li class="nav-item px-3 py-5"><a class="nav-link" href="#" >TV </a></li>
                             <li class="nav-item px-3 py-5"><a class="nav-link" href="#" >GAmes </a></li>
