@@ -18,7 +18,7 @@
                     @csrf 
                     @method('DELETE')
                     <button type="submit" class="btn btn-sm btn-danger ms-3"
-                            onclick="return confirm('PENSACI, vuoi davvero cancellarlo ?')">DELETE</button>
+                            onclick="return confirm(' PENSACI, vuoi davvero cancellarlo ?')">DELETE</button>
                 </form>
 
             </div>
