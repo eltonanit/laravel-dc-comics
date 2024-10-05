@@ -6,6 +6,12 @@
     }
 }
 
+.thumb img {
+   
+        max-height: 200px;
+        width:auto;
+}
+
 .nav-item.active {
     border-bottom: 9px solid rgb(237, 59, 9);
     color: rgb(232, 70, 21);
