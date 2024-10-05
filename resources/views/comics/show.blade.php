@@ -14,6 +14,13 @@
                 <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}" class="btn btn-sm btn-warning">
                    EDIT
                 </a>
+                <form action="{{ route('comics.destroy', ['comic' => $comic->id] ) }}" method="POST">
+                    @csrf 
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-sm btn-danger ms-3"
+                            onclick="return confirm('PENSACI, vuoi davvero cancellarlo ?')">DELETE</button>
+                </form>
+
             </div>
             <h3>{{ $comic['series'] }}</h3>
             <p><sub>{{ $comic['type'] }}</sub></p>
