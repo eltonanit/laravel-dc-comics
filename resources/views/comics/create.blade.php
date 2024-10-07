@@ -4,9 +4,9 @@
 <div class="p-4">
     <div class="container">
         <div class="row">
-            @if($errors->any())
+            @if ($errors->any())
             <div class="alert alert-danger">
-                <ul class="list-unstyled m-0">
+                <ul class="list-unstyled m-1">
                     @foreach ($errors->all() as $error)
                     <li> {{ $error }}</li>
                     @endforeach
