@@ -4,6 +4,16 @@
 <div class="p-4">
     <div class="container">
         <div class="row">
+            @if($errors->any())
+            <div class="alert alert-danger">
+                <ul class="list-unstyled m-0">
+                    @foreach ($errors->all() as $error)
+                    <li> {{ $message }}</li>
+                    @endforeach
+
+                </ul>
+            </div>
+            @endif
             <div class="col-12">
                 <form action="{{ route('comics.store') }}" method="post">
                     @csrf
