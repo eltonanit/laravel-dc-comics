@@ -23,9 +23,9 @@ class ComicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Comic $comic )
+    public function create()
     {
-         return view ('comics.create', compact('comic'));
+         return view('comics.create');
     }
 
     /**
@@ -36,7 +36,14 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $form_data = $request->except('_token');
+        $new_comic = new Comic();
+        $new_comic->fill($form_data);
+        
+        $new_comic->save();
+        
+        return redirect()->route('comics.index');
+
     }
 
     /**
