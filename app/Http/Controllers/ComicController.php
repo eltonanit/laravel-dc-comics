@@ -40,8 +40,8 @@ class ComicController extends Controller
         'title' => 'required|max:255',
         'thumb' =>'max:255',
         'price' => 'required|max:10',
-        'sale_date'  => 'require|date',
-        'type' =>'require|max:255'
+        'sale_date'  => 'required|date',
+        'type' =>'required|max:255'
        ]);
 
         $form_data = $request->all();
@@ -90,8 +90,8 @@ class ComicController extends Controller
         'title' => 'required|max:255',
         'thumb' =>'max:255',
         'price' => 'required|max:10',
-        'sale_date'  => 'require|date',
-        'type' =>'require|max:255'
+        'sale_date'  => 'required|date',
+        'type' =>'required|max:255'
        ]);
         
         $form_data = $request->all();
